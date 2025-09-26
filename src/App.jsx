@@ -10,6 +10,7 @@ return (
   <Person></Person>
   <Person></Person>
   <Sports></Sports>
+  <Cv></Cv>
   </>
   )
 }
@@ -30,5 +31,12 @@ function Sports (){
     </div>
   )
 }
-
+function Cv (){
+  return(
+    <>
+    <h3>Aysha</h3>
+    <p>Aspiring Mern Stack Developer. I am currently learning React</p>
+    </>
+  )
+}
 export default App
