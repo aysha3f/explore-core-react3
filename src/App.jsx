@@ -15,9 +15,20 @@ return (
   <Player name="mushi" runs="5000"></Player>
   <Salami event="Roja Eid" amount="2000"></Salami>
   <Salami event="Graduation"></Salami>
+  <Book name="Heamin Sunim" book='Love for Imperfection'></Book>
+  <Book name="Brain Trace" book='Eat That Frog'></Book>
   </>
   )
 }
+function Book ({name, book}){
+  return(
+ <div className='student'>
+ <p>Favourite writer:  {name}</p>
+ <p>Best Selling Book:  {book}</p>
+ </div>
+  )
+}
+
 
 function Salami ({event, amount=0}){
   return (
