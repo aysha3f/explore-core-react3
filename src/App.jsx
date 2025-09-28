@@ -11,9 +11,33 @@ return (
   <Developer name="Mozumder" tech='JS'></Developer>
   <Developer name="Rajon" tech='Python'></Developer>
   <Developer name="Shabana" tech='Java'></Developer>
+  <Player name="tamim" runs="5000"></Player>
+  <Player name="mushi" runs="5000"></Player>
+  <Salami event="Roja Eid" amount="2000"></Salami>
+  <Salami event="Graduation"></Salami>
   </>
   )
 }
+
+function Salami ({event, amount=0}){
+  return (
+    <div className='student'>
+    <p>Salami For: {event} </p>
+    <p>Amount: {amount}</p>
+    </div>
+  )
+}
+
+// const {name, runs} = {name:'tamim', runs: '5000'}
+function Player({name, runs}){
+  return(
+    <div className='student'>
+      <h3>Name: {name}</h3>
+      <p>Runs: {runs}</p>
+    </div>
+  )
+}
+
 
 function Developer(props){
   console.log(props);
